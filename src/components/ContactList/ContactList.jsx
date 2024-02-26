@@ -16,7 +16,7 @@ export const ContactList = () => {
   return (
     <ul className={css.list}>
       {filtData.map((data) => {
-        return <li key={data.id} className={css.listItem}><Contact  dataContact={data} /></li>;
+        return <Contact key={data.id} dataContact={data}/>
       })}
     </ul>
   );

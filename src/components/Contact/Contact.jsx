@@ -12,8 +12,7 @@ export const Contact = ({ dataContact: { id, name, number } }) => {
   const handleDeleteContact = () => dispatch(deleteNumber(id));
 
   return (
-    <>
-      
+    <li className={css.listItem} >
         <div className={css.contactItem}>
           <p className={css.contactIcon}>
             <BsFillPersonFill />
@@ -29,8 +28,7 @@ export const Contact = ({ dataContact: { id, name, number } }) => {
             Delete
           </button>
         </div>
-      
-    </>
+    </li>
   );
 };
 
