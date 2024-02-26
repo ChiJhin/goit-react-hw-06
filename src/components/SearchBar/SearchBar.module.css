@@ -1,0 +1,14 @@
+.searchGroup {
+  display: flex;
+  flex-direction: column;
+
+}
+.search {
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 290px;
+}
+.searchLable {
+  margin-top: 30px;
+}
