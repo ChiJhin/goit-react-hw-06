@@ -1,9 +1,9 @@
 
-import { ContactList } from "../ContactList/ContactList";
-import { SearchBar } from "../SearchBar/SearchBar";
-import { ConctactForm } from "../ContactForm/ContactForm";
+import ContactList from "../ContactList/ContactList";
+import SearchBar from "../SearchBar/SearchBar";
+import ConctactForm from "../ContactForm/ContactForm";
 
-export const App = () => {
+const App = () => {
   return (
     <>
       <h1>Phonebook</h1>
@@ -13,3 +13,4 @@ export const App = () => {
     </>
   );
 };
+export default App

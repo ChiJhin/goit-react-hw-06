@@ -22,13 +22,12 @@ const userSchema = Yup.object().shape({
     .matches(/^\+?[0-9\s-]+$/, "Invalid phone number"),
 });
 
-
 const initialValues = {
   name: "",
   number: "",
 };
 
-export const ConctactForm = () => {
+const ConctactForm = () => {
   const idName = useId();
   const idNumber = useId();
   const dispatch = useDispatch();
@@ -58,7 +57,7 @@ export const ConctactForm = () => {
       validationSchema={userSchema}
     >
       <Form className={css.form}>
-       
+        
           <div className={css.formGroup}>
             <label htmlFor={idName}>Name</label>
             <Field
@@ -84,7 +83,7 @@ export const ConctactForm = () => {
             />
           </div>
         
-        <div className={css.formBtn}>
+          <div className={css.formBtn}>
           <button className={css.btn} type="submit">
             Add Contact
           </button>
@@ -93,3 +92,4 @@ export const ConctactForm = () => {
     </Formik>
   );
 };
+export default ConctactForm

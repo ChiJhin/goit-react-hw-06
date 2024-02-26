@@ -1,11 +1,11 @@
 import { useSelector } from "react-redux";
 
-import { Contact } from "../Contact/Contact";
+import Contact from "../Contact/Contact";
 import { getContact, getFilter } from "../../redux/selector";
 
 import css from "./ContactList.module.css";
 
-export const ContactList = () => {
+const ContactList = () => {
   const dataContact = useSelector(getContact);
   const filtQuery = useSelector(getFilter);
   
@@ -16,8 +16,9 @@ export const ContactList = () => {
   return (
     <ul className={css.list}>
       {filtData.map((data) => {
-        return <Contact key={data.id} dataContact={data}/>
+        return <li key={data.id} className={css.listItem}><Contact dataContact={data} /></li>
       })}
     </ul>
   );
 };
+export default ContactList

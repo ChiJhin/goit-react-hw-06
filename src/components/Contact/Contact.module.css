@@ -1,29 +1,30 @@
-
-
-.listItem {
+.listItem{ 
+    display: flex;
+    padding: 10px;
+    width: 330px;
     border: 2px solid black;
-    width: 300px;
-    border-radius: 4px;
-    margin: 3px;
-    padding: 5px;
+    
+}
+.info{
+     
+     display: flex;
+     flex-direction: column;
+     row-gap: 10px;
+     margin-right: auto;
+}
+.btn{
+    height: 40px;
+    width: 80px;
+    margin: auto 0;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 13px;
+    transition: 350ms;
+}
+.btn:hover, .btn:focus{ 
+    background-color: rgb(208, 208, 208);
+}
+.name{ 
     display: flex;
-    justify-content: space-between;
-  }
-  .contactItem {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .contactIcon {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .contactBtn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .btn {
-    height: 25px;
-  }
+    gap: 10px
+}
